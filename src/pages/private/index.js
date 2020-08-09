@@ -115,7 +115,7 @@ export default function Private() {
                             <ListItemText primary='Home' />
                         </ListItem>)
                     }} />
-                    <Route exact path='/produk' children={({ match, history }) => {
+                    <Route path='/produk' children={({ match, history }) => {
                         return (<ListItem button selected={match ? true : false} onClick={() => history.push('/produk')}>
                             <ListItemIcon>
                                 <StoreIcon />
@@ -123,7 +123,7 @@ export default function Private() {
                             <ListItemText primary='Produk' />
                         </ListItem>)
                     }} />
-                    <Route exact path='/transaksi' children={({ match, history }) => {
+                    <Route path='/transaksi' children={({ match, history }) => {
                         return (<ListItem button selected={match ? true : false} onClick={() => history.push('/transaksi')}>
                             <ListItemIcon>
                                 <ShoppingCartIcon />
